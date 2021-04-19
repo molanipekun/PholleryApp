@@ -1,0 +1,8 @@
+<!-- in app.component.html -->
+<ngx-dropzone (change)="onSelect($event)" [multiple]="false">
+    <ngx-dropzone-label>Drop your picture here</ngx-dropzone-label>
+    <ngx-dropzone-preview *ngIf="file" [removable]="true" (removed)="onRemove($event)">
+        <!-- <img src= -->
+        <ngx-dropzone-label>{{ file.name }} ({{ file.type }})</ngx-dropzone-label>
+    </ngx-dropzone-preview>
+</ngx-dropzone>

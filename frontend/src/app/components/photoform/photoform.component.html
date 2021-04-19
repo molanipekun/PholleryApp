@@ -1,0 +1,10 @@
+<app-dropzone></app-dropzone>
+<br /><br />
+<mat-form-field class="example-full-width">
+    <mat-label>Name of photo</mat-label>
+    <input matInput placeholder="Picture name here" [(ngModel)]="name">
+</mat-form-field>
+
+<br /><br />
+
+<button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>

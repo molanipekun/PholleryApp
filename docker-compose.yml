@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  phollery:
+    build: .
+    ports:
+        - "3000:3000"
+    # depends_on:
+    #     - mongodb
+  #database is going to be the ip and port you use in connecting to mongodb
+  database:
+    image: mongo:latest
+    ports:
+        - "27017:27017"
+
+volumes:
+  db-data:

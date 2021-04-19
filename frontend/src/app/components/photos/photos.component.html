@@ -1,0 +1,17 @@
+<div class="photos">
+    <mat-card *ngFor="let photo of photos" class="p-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <!-- <mat-card-title>{{photo.name}}</mat-card-title> -->
+        </mat-card-header>
+        <div class="center p-image">
+            <img mat-card-image class="p-img" [src]="baseUrl + '/'+ photo.url" [alt]="photo.name">
+        </div>
+        <mat-card-title>{{photo.name | titlecase }}</mat-card-title>
+       
+        <mat-card-actions>
+          <button mat-button>EDIT</button>
+          <button mat-button (click)="deletePhoto(photo._id)">DELETE</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
