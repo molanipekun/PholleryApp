@@ -17,4 +17,3 @@ An rxjs app
 ### To run with docker
 * run docker-compose up
 * NOTE: docker-compose has to be installed first
-# PholleryApp
